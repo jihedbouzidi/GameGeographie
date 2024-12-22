@@ -1,0 +1,18 @@
+<div class="background-overlay"></div>
+
+<div class="score-display">
+  <p>Score : {{ score }}</p>
+</div>
+<div id="choix">
+  <h3>Available Choices</h3>
+  <p *ngFor="let country of countries; let i = index" [id]="'i' + (i + 1)" [style.color]="styles[i]"  (click)="copyCountryName(i)" class="country-choice"> {{ country }} </p>
+</div>
+<div class="container">
+  <div *ngFor="let country of countries; let i = index" class="card">
+    <h2>{{ i + 1 }} - Guess the Flag</h2>
+    <img [src]="'i' + (15-i) + '.png'" [alt]="'Flag ' + (i + 1)" />
+    <input type="text" [id]="'input' + (i + 1)" placeholder="Enter the country name..." />
+    <button [id]="'btn' + (i + 1)" (click)="checkAnswer(i, 'input' + (i + 1), 'i' + (i + 1))" >Valider</button>
+    <p [id]="'feedback' + (i + 1)" class="feedback">{{ feedbacks[i] }}</p>
+  </div>
+</div>

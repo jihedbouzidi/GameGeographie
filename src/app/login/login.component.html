@@ -1,0 +1,24 @@
+<div class="login-wrapper">
+    <div class="login-container">
+      <h2>Connexion</h2>
+      <form (ngSubmit)="onLogin()">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" [(ngModel)]="email" name="email" required placeholder="Entrez votre email">
+        </div>
+  
+        <div class="form-group">
+          <label for="password">Mot de passe</label>
+          <input type="password" id="password" [(ngModel)]="password" name="password" required placeholder="Entrez votre mot de passe">
+        </div>
+  
+        <button type="submit">Se connecter</button>
+  
+        <div class="login-footer">
+          <p>Pas encore de compte ? <a routerLink="/signup">Inscrivez-vous</a></p>
+          <p><a href="/forgot-password">Mot de passe oublié ?</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  

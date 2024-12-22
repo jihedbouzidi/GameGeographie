@@ -1,0 +1,52 @@
+<div class="contact-wrapper">
+    <div class="contact-container">
+      <h2 class="contact-title">Contactez-nous</h2>
+      <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+        <div class="input-group">
+          <input
+            type="text"
+            name="fullName"
+            ngModel
+            required
+            class="input-field"
+            placeholder="Nom complet"
+          />
+        </div>
+        <div class="input-group">
+          <input
+            type="email"
+            name="email"
+            ngModel
+            required
+            class="input-field"
+            placeholder="Adresse email"
+          />
+        </div>
+        <div class="input-group">
+          <input
+            type="text"
+            name="subject"
+            ngModel
+            required
+            class="input-field"
+            placeholder="Sujet"
+          />
+        </div>
+        <div class="input-group">
+          <textarea
+            name="message"
+            ngModel
+            required
+            class="input-field"
+            placeholder="Votre message"
+            rows="4"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Envoyer</button>
+        <div class="back-link">
+          <a href="/">Retour à l'accueil</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  

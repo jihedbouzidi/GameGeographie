@@ -1,0 +1,135 @@
+/* Style global pour centrer le formulaire */
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #2c3e50, #34495e); /* Dégradé sombre bleu-gris pour un aspect professionnel */
+}
+
+/* Conteneur du formulaire de connexion */
+.login-container {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15); /* Ombre douce pour une profondeur élégante */
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Légère animation lors du survol */
+.login-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Titre de la page de connexion */
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+}
+
+/* Style pour chaque groupe de formulaire */
+.form-group {
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+/* Style des étiquettes */
+label {
+  font-weight: 500;
+  color: #7f8c8d;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* Style des champs de texte */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 16px 18px;
+  border: 1px solid #bdc3c7; /* Bordure grise claire pour une finition soignée */
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  color: #2c3e50;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus sur les champs d'entrée */
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #3498db; /* Bordure bleue claire pour un effet élégant et moderne */
+  outline: none;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.6); /* Ombre bleue douce */
+}
+
+/* Style pour le bouton de connexion */
+button {
+  width: 100%;
+  padding: 16px;
+  background-color: #3498db; /* Bleu clair, très professionnel et apaisant */
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(52, 152, 219, 0.3); /* Ombre bleue douce */
+}
+
+/* Effet de survol du bouton */
+button:hover {
+  background-color: #2980b9; /* Couleur bleue un peu plus foncée au survol */
+  box-shadow: 0 4px 25px rgba(52, 152, 219, 0.4); /* Ombre plus marquée */
+}
+
+/* Style pour le pied de page du formulaire */
+.login-footer {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+/* Liens du pied de page */
+.login-footer a {
+  color: #3498db; /* Bleu similaire au bouton pour une cohérence visuelle */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Changement de couleur des liens au survol */
+.login-footer a:hover {
+  color: #2980b9; /* Lien qui devient plus foncé au survol */
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 25px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    padding: 14px 16px;
+  }
+
+  button {
+    padding: 14px;
+  }
+}

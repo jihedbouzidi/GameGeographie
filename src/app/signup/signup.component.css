@@ -1,0 +1,89 @@
+/* Conteneur principal du formulaire (modifié pour correspondre à la couleur de fond de profil) */
+.signup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #2c3e50, #34495e); /* Dégradé bleu-gris similaire à profil */
+}
+
+/* Conteneur du formulaire (modifié pour un aspect similaire à celui du profil) */
+.signup-container {
+  width: 100%;
+  max-width: 450px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1); /* Ombre douce comme pour le profil */
+  text-align: center;
+  border: 1px solid #ddd;
+  margin: 20px;
+}
+
+/* Titre du formulaire (ajustement de la couleur du texte) */
+.signup-title {
+  font-size: 26px;
+  color: #34495e; /* Couleur du texte pour le titre modifiée pour correspondre à celle du profil */
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/* Groupes de saisie (marge ajustée) */
+.input-group {
+  margin-bottom: 20px;
+}
+
+/* Champs de saisie (style ajusté pour correspondre à celui du profil) */
+.input-field {
+  width: 100%;
+  padding: 15px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol des champs (modification de la couleur de focus pour correspondre à celle de profil) */
+.input-field:focus {
+  border-color: #3498db; /* Bleu clair similaire au profil */
+  outline: none;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.6);
+}
+
+/* Bouton de soumission (modification de la couleur de fond et de l'effet au survol) */
+.btn-submit {
+  width: 100%;
+  padding: 15px;
+  background-color: #3498db; /* Bleu clair similaire à celui du profil */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Effet au survol du bouton */
+.btn-submit:hover {
+  background-color: #2980b9; /* Bleu plus foncé comme dans profil */
+}
+
+/* Lien pour redirection vers la page de connexion (ajustement des couleurs) */
+.login-link {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.login-link a {
+  color: #3498db; /* Bleu clair correspondant à celui du profil */
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

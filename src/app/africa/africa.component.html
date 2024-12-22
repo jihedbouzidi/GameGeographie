@@ -1,0 +1,61 @@
+<div class="container">
+    <h1>Continent de Africa</h1>
+    <div class="quiz-section">
+      <div class="map">
+        <img src="africa.png" alt="Map of Africa" class="map-image">
+      </div>
+      <div class="quiz-options">
+        <div class="score-display">
+          <p id="score">Score: {{score}}</p>
+        </div>
+        <form>
+          <label for="country1">1 - Sélectionnez un numéro :</label>
+          <select #mySelect2 id="country1" class="styled-select">
+            <option value="Sélection numéro">Sélection numéro</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+          </select>
+  
+          <label  for="country2">2 - Sélectionnez un pays :</label>
+          <select #mySelect1 id="country2" class="styled-select">
+            <option value="Sélectionnez un pays">Sélectionnez un pays</option>
+            <option value="Egypt">Egypt</option>
+            <option value="Senegal">Senegal</option>
+            <option value="Cameroon">Cameroon</option>
+            <option value="Morocco">Morocco</option>
+            <option value="Libya">Libya</option>
+            <option value="South Sudan">South Sudan</option>
+            <option value="Sudan">Sudan</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Tunisia">Tunisia</option>
+            <option value="Niger">Niger</option>
+            <option value="Mauritania">Mauritania</option>
+            <option value="Central African Republic">Central African Republic</option>
+            <option value="Algeria">Algeria</option>
+            <option value="Mali">Mali</option>
+            <option value="Chad">Chad</option>
+
+          </select>
+  
+          <div class="button-group">
+            <button (click)="valide()" type="button" class="btn">Valider</button>
+            <button type="reset" class="btn">Réinitialiser</button>
+          </div>
+        </form>
+      </div>
+    </div>
+</div>
+<div class="earth"></div>

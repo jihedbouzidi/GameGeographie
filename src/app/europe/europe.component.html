@@ -1,0 +1,62 @@
+<div class="container">
+    <h1>Continent de Europe</h1>
+    <div class="quiz-section">
+      <div class="map">
+        <img src="europe.gif" alt="Map of Europe" class="map-image">
+      </div>
+      <div class="quiz-options">
+        <div class="score-display">
+          <p id="score">Score: {{score}}</p>
+        </div>
+        <form>
+          <label for="country1">1 - Sélectionnez un numéro :</label>
+          <select #mySelect2 id="country1" class="styled-select">
+            <option value="Sélection numéro">Sélection numéro</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+          </select>
+  
+          <label for="country2">2 - Sélectionnez un pays :</label>
+          <select #mySelect1 id="country2" class="styled-select">
+            <option value="Sélectionnez un pays">Sélectionnez un pays</option>
+            <option value="Macedonia">Macedonia</option>
+            <option value="Belurussia">Belurussia</option>
+            <option value="Ploand">Ploand</option>
+            <option value="Spain">Spain</option>
+            <option value="Romania">Romania</option>
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Moldavia">Moldavia</option>
+            <option value="Ukraine">Ukraine</option>
+            <option value="Germany">Germany</option>
+            <option value="Italy">Italy</option>
+            <option value="Russia">Russia</option>
+            <option value="France">France</option>
+            <option value="Greece">Greece</option>
+
+          </select>
+  
+          <div class="button-group">
+            <button (click)="valide()" type="button" class="btn">Valider</button>
+            <button type="reset" class="btn">Réinitialiser</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="earth"></div>
+  

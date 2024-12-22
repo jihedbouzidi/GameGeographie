@@ -1,0 +1,164 @@
+:host {
+    display: block;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* Style de la barre latérale */
+.sidebar {
+    width: 20%;
+    background-color: #1e293b;
+    color: #ffffff;
+    position: fixed;
+    height: 100vh;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #cbd5e0;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #4a5568;
+    color: #38b2ac;
+}
+
+/* Section principale */
+.main-content {
+    margin-left: 22%;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.image-title {
+    color: #2d3748;
+    margin-bottom: 10px;
+}
+
+.image-section img {
+    width: 100%;
+    border-radius: 8px;
+    max-height: 800px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Boutons */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrer les boutons */
+    gap: 20px; /* Espacement entre les boutons */
+    margin-top: 30px;
+}
+
+/* Boutons stylés */
+.buttons button {
+    background: linear-gradient(135deg, #4e4caf, #2e317d); /* Dégradé pour un aspect premium */
+    color: #ffffff; /* Texte blanc */
+    border: none; /* Supprimer les bordures classiques */
+    padding: 12px 30px; /* Taille confortable pour les boutons */
+    border-radius: 50px; /* Boutons en forme de capsule */
+    font-size: 1rem; /* Texte de taille standard */
+    font-weight: 600; /* Texte légèrement épais pour la lisibilité */
+    letter-spacing: 1px; /* Espacement des lettres pour un style moderne */
+    cursor: pointer; /* Indicateur d’interaction */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour un effet flottant */
+    transition: all 0.3s ease; /* Transitions douces pour une expérience fluide */
+}
+
+/* Effets au survol */
+.buttons button:hover {
+    background: linear-gradient(135deg, #667abb, #39388e); /* Dégradé plus clair */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Ombre accentuée */
+    transform: translateY(-3px); /* Légère élévation */
+}
+
+/* Effets au clic */
+.buttons button:active {
+    background: linear-gradient(135deg, #2e767d, #1b5e20); /* Couleur plus sombre */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Réduction de l'ombre */
+    transform: translateY(1px); /* Effet d'enfoncement */
+}
+
+/* Focus pour l'accessibilité */
+.buttons button:focus {
+    outline: 2px solid #81a9c7; /* Contour visible au focus */
+    outline-offset: 4px; /* Détachement du contour */
+}
+
+/* Affichage du score */
+.score-display {
+    width: 15%;
+    max-width: 300px;
+    margin: 4% auto 20px auto;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    background: linear-gradient(135deg, #1e2f5c, #3b5998);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(255, 255, 255, 0.1) inset;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 4%;
+    top: 4%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.score-display:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7), 0 1px 4px rgba(255, 255, 255, 0.2) inset;
+}
+
+.score-display p {
+    color: #f0f0f0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Classes pour les réponses */
+.correct-answer {
+    background-color: green;
+}
+
+.incorrect-answer {
+    background-color: red;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+/* Lien dans la barre latérale */
+.sidebar a {
+    text-decoration: none;
+}

@@ -1,0 +1,128 @@
+/* Style global pour centrer et personnaliser le profil */
+.profil-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #2c3e50, #34495e); /* Dégradé professionnel bleu-gris */
+}
+
+/* Conteneur principal du profil */
+.profil-container {
+  width: 100%;
+  max-width: 800px; /* Largeur du conteneur */
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1); /* Ombre douce et élégante */
+  padding: 50px;
+  text-align: center; /* Aligner le texte au centre */
+  transition: all 0.3s ease;
+}
+
+/* Animation subtile lors du survol du conteneur */
+.profil-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Section de l'en-tête du profil (image et détails) */
+.profil-header {
+  display: flex;
+  justify-content: center; /* Centrer l'image et les détails ensemble */
+  align-items: center;
+  flex-direction: column; /* Placer les éléments en colonne */
+  margin-bottom: 40px; /* Espacement après l'image et les détails */
+}
+
+/* Image de profil avec une bordure ronde et taille augmentée */
+.profil-image img {
+  width: 150px; /* Taille de la photo augmentée */
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #3498db; /* Bordure bleue autour de l'image */
+  object-fit: cover;
+  margin-bottom: 20px; /* Marge en bas de l'image */
+}
+
+/* Détails du profil */
+.profil-details {
+  text-align: center; /* Centrer les détails du profil */
+  color: #2c3e50;
+}
+
+.profil-details h2 {
+  font-size: 28px; /* Taille du titre augmentée */
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.profil-details .full-name,
+.profil-details .email {
+  font-size: 18px; /* Taille du texte augmentée */
+  color: #7f8c8d;
+  margin-bottom: 12px; /* Espacement entre les lignes */
+}
+
+/* Bio de l'utilisateur */
+.profil-bio {
+  margin-bottom: 40px;
+}
+
+.bio-text {
+  font-size: 18px;
+  color: #2c3e50;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+/* Style des boutons d'édition */
+.edit-btns {
+  display: flex;
+  justify-content: center; /* Centrer les boutons */
+}
+
+.edit-btn {
+  background-color: #3498db; /* Bleu clair professionnel */
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(52, 152, 219, 0.3);
+  margin: 5px; /* Ajout d'un espacement entre les boutons */
+}
+
+.edit-btn:hover {
+  background-color: #2980b9; /* Bleu plus foncé au survol */
+  box-shadow: 0 4px 25px rgba(52, 152, 219, 0.4);
+}
+
+/* Responsive pour les écrans plus petits */
+@media (max-width: 768px) {
+  .profil-container {
+    padding: 30px; /* Réduction du padding sur les petits écrans */
+    width: 90%;
+  }
+
+  .profil-image img {
+    width: 120px; /* Photo de profil un peu plus petite sur les petits écrans */
+    height: 120px;
+  }
+
+  .profil-details h2 {
+    font-size: 24px; /* Taille du titre réduite */
+  }
+
+  .bio-text {
+    font-size: 16px; /* Taille de la bio réduite */
+  }
+
+  .edit-btn {
+    padding: 12px 24px;
+    font-size: 16px; /* Taille des boutons réduite */
+  }
+}

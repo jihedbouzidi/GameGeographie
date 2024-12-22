@@ -1,0 +1,30 @@
+<nav>
+    <div class="sidebar">
+      <ul>
+        <li *ngFor="let question of questionsList; let i = index">
+          <a (click)="scrollTo('q' + (i + 1))" [id]="'nav-link-' + (i + 1)">Question {{ i + 1 }}</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="score-display">
+    <p id="score">Score: {{ score }}</p>
+  </div>
+  
+  <section>
+    <div *ngFor="let question of questionsList; let i = index" [attr.id]="'q' + (i + 1)" class="main-content">
+      <h3>Question {{ i + 1 }}</h3>
+      <h2 class="image-title">{{ question.title }}</h2>
+  
+      <div class="image-section">
+        <img [src]="question.image" alt="Image principale" />
+      </div>
+      <div class="buttons">
+        <button *ngFor="let option of question.options" (click)="selectAnswer(i, option, 'nav-link-' + (i + 1))">
+          {{ option }}
+        </button>
+      </div>
+    </div>
+  </section>
+  

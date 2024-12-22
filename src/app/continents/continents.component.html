@@ -1,0 +1,37 @@
+<div id="aaa" class="gallery-container">
+    <h1>Choisissez le Continent</h1>
+    <p>Explorez les différentes régions du monde !</p>
+    
+    <div class="container">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill">
+                <span class="percentage" id="percentageText">{{ percentage | number: '1.0-2' }}%</span>
+            </div>
+        </div>
+    </div>
+    <br>
+    
+    <div class="gallery">
+        <!-- Images et liens vers les différentes régions -->
+        <div class="photo-frame asia">
+            <div class="photo">
+                <a routerLink="/asia"><img src="https://www.clker.com/cliparts/Y/y/p/q/S/S/asia-black-md.png" id="i1" alt="Asie" style="width:100%; height:100%; margin-top: 10%;"></a>
+            </div>
+        </div>
+        <div class="photo-frame america">
+            <div class="photo">
+                <a routerLink="/america"><img src="https://static.thenounproject.com/png/3090684-200.png" alt="Amérique" style="width:100%; height:100%;"></a>
+            </div>
+        </div>
+        <div class="photo-frame africa">
+            <div class="photo">
+                <a routerLink="/africa"><img src="https://www.pngplay.com/wp-content/uploads/6/Africa-Black-Map-PNG-HD-Quality.png" alt="Afrique" style="width:110%; height:110%; margin-right: 50%; margin-top: 20%;"></a>
+            </div>
+        </div>
+        <div class="photo-frame europe">
+            <div class="photo">
+                <a routerLink="/europe"><img src="https://png.pngtree.com/png-vector/20240914/ourmid/pngtree-black-silhouette-map-of-europe-png-image_12912520.png" alt="Europe" style="width:100%; height:100%;"></a>
+            </div>
+        </div>
+    </div>
+</div>

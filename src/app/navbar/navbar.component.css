@@ -1,0 +1,70 @@
+:host { 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.gaming-navbar {
+    background-color: #0d1b2a; /* Bleu Marine Sombre pour un style élégant et professionnel */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Titre de la barre de navigation avec effet RGB dynamique */
+.navbar-brand {
+    color: #f8f9fa;
+    font-size: 1.6rem;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.6), 0 0 10px rgba(0, 255, 0, 0.6), 0 0 15px rgba(0, 0, 255, 0.6); /* RGB shadow */
+}
+
+.navbar-brand:hover {
+    color: #3498db;
+    text-shadow: 0 0 10px rgba(52, 152, 219, 0.9), 0 0 20px rgba(52, 152, 219, 0.8), 0 0 30px rgba(52, 152, 219, 0.7);
+    animation: rgb-fade 2s infinite alternate;
+}
+
+/* Liens de navigation avec effet RGB */
+.nav-link {
+    color: #f1f1f1;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+.nav-link:hover {
+    color: #3498db;
+    text-shadow: 0 0 8px rgba(52, 152, 219, 0.8), 0 0 12px rgba(52, 152, 219, 0.6), 0 0 20px rgba(52, 152, 219, 0.4);
+    animation: rgb-link-fade 2s infinite alternate;
+}
+
+/* Icône de menu avec effet RGB pour une apparence moderne */
+.navbar-toggler-icon {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggler-icon:hover {
+    background-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.8), 0 0 20px rgba(52, 152, 219, 0.6);
+}
+
+/* Effets RGB d'animation */
+@keyframes rgb-fade {
+    0% { text-shadow: 0 0 5px rgba(255, 0, 0, 0.6), 0 0 10px rgba(0, 255, 0, 0.6), 0 0 15px rgba(0, 0, 255, 0.6); }
+    100% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.9); }
+}
+
+@keyframes rgb-link-fade {
+    0% { text-shadow: 0 0 5px rgba(52, 152, 219, 0.8); }
+    100% { text-shadow: 0 0 15px rgba(255, 255, 255, 0.8); }
+}
+
+/* Adaptation du contenu principal */
+.main-content {
+    padding-top: 70px;
+    position: relative;
+    z-index: 0;
+}

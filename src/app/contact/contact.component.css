@@ -1,0 +1,89 @@
+/* Conteneur principal avec fond dégradé (modifié pour correspondre au style de profil et signup) */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #2c3e50, #34495e); /* Dégradé bleu-gris similaire aux autres pages */
+}
+
+/* Conteneur de contact (modifié pour correspondre aux autres styles de conteneur) */
+.contact-container {
+  width: 100%;
+  max-width: 450px;
+  background-color: #ffffff;
+  border-radius: 20px; /* Bords arrondis comme dans signup */
+  padding: 40px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1); /* Ombre douce pour un effet moderne */
+  text-align: center;
+  border: 1px solid #ddd;
+  margin: 20px;
+}
+
+/* Titre du formulaire (couleur et police modifiées) */
+.contact-title {
+  font-size: 26px;
+  color: #34495e; /* Gris foncé similaire à celui du signup */
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/* Groupes de saisie (espace ajusté pour uniformité) */
+.input-group {
+  margin-bottom: 20px;
+}
+
+/* Champs de saisie (modifications pour garder la cohérence avec le signup) */
+.input-field {
+  width: 100%;
+  padding: 15px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol des champs (couleur de focus ajustée) */
+.input-field:focus {
+  border-color: #3498db; /* Bleu clair, uniforme avec les autres formulaires */
+  outline: none;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.6);
+}
+
+/* Bouton de soumission (couleur modifiée pour correspondre au thème global) */
+.btn-submit {
+  width: 100%;
+  padding: 15px;
+  background-color: #3498db; /* Bleu clair similaire au bouton de signup */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Effet au survol du bouton */
+.btn-submit:hover {
+  background-color: #2980b9; /* Bleu plus foncé pour le survol */
+}
+
+/* Lien de retour (couleur et typographie ajustées pour l'uniformité) */
+.back-link {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.back-link a {
+  color: #3498db; /* Bleu clair similaire au bouton */
+  text-decoration: none;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}

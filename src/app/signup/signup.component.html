@@ -1,0 +1,86 @@
+<div class="signup-wrapper">
+    <div class="signup-container">
+      <h2 class="signup-title">Créer un compte</h2>
+      
+      <form (ngSubmit)="onSubmit(signupForm)" #signupForm="ngForm">
+        <!-- Prénom -->
+        <div class="input-group">
+          <input 
+            type="text" 
+            id="firstName" 
+            name="firstName" 
+            ngModel 
+            required
+            placeholder="Prénom"
+            class="input-field"
+          />
+        </div>
+  
+        <!-- Nom -->
+        <div class="input-group">
+          <input 
+            type="text" 
+            id="lastName" 
+            name="lastName" 
+            ngModel 
+            required
+            placeholder="Nom"
+            class="input-field"
+          />
+        </div>
+  
+        <!-- Email -->
+        <div class="input-group">
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            ngModel 
+            required
+            placeholder="Email"
+            class="input-field"
+          />
+        </div>
+  
+        <!-- Mot de passe -->
+        <div class="input-group">
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            ngModel 
+            required
+            placeholder="Mot de passe"
+            class="input-field"
+          />
+        </div>
+  
+        <!-- Confirmer le mot de passe -->
+        <div class="input-group">
+          <input 
+            type="password" 
+            id="confirmPassword" 
+            name="confirmPassword" 
+            ngModel 
+            required
+            placeholder="Confirmer le mot de passe"
+            class="input-field"
+          />
+        </div>
+  
+        <!-- Bouton de soumission -->
+        <button 
+          type="submit" 
+          class="btn-submit" 
+          [disabled]="!signupForm.valid"
+        >
+          S'inscrire
+        </button>
+        
+        <div class="login-link">
+          <p>Déjà un compte ? <a routerLink="/login">Se connecter</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  
